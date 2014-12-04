@@ -2,6 +2,6 @@
   "name": "pdf-html-proto",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0"
+    "spin.js": "~2.0.1"
   }
 }
