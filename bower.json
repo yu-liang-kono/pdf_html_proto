@@ -2,6 +2,7 @@
   "name": "pdf-html-proto",
   "private": true,
   "dependencies": {
-    "spin.js": "~2.0.1"
+    "spin.js": "~2.0.1",
+    "underscore": "~1.7.0"
   }
 }
