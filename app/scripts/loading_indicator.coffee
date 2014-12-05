@@ -9,11 +9,11 @@ class LoadingIndicator
     # number of lines to draw
     lines: 13
     # length of each line
-    length: 10
+    length: 6
     # line thickness
-    width: 10
+    width: 3
     # radius of inner circle
-    radius: 30
+    radius: 10
     # corner roundness (0..1)
     corners: 1
     # rotation offset
@@ -42,3 +42,5 @@ class LoadingIndicator
   createDom: ->
 
     new Spinner(@opt).spin().el
+
+window.LoadingIndicator = LoadingIndicator
