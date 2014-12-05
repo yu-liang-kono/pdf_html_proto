@@ -1,4 +1,37 @@
+#pages
+  padding: 7.5px
+  background-color: #dbdbdb
+
 .page
-  .stub
-    background-color: #aaa
-    width: 100%
+  position: relative
+  margin: 7.5px 0
+
+.stub
+  position: relative
+  top: 0
+  left: 0
+  z-index: 1
+  background-color: #aaa
+
+.content
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+
+.backdrop
+  position: relative
+  top: 0
+  left: 0
+  z-index: 3
+  background-color: white
+
+.background
+  display: block
+  position: absolute
+  z-index: 4
+
+.foreground
+  display: block
+  position: absolute
+  z-index: 5
