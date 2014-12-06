@@ -34,7 +34,7 @@ class Viewer
       pageNumber: pageNumber
       backgroundImages: [
         {
-          src: "/assets/bg_#{ zeroFilledPageNumber }.png",
+          src: "assets/bg_#{ zeroFilledPageNumber }.png",
           top: 0
           left: 0
           size: 1
@@ -42,7 +42,7 @@ class Viewer
       ]
       foregroundImages: [
         {
-          src: "/assets/txt_#{ zeroFilledPageNumber }.svg"
+          src: "assets/txt_#{ zeroFilledPageNumber }.svg"
           top: 0
           left: 0
           size: 1
