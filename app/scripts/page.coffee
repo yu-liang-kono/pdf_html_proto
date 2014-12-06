@@ -75,7 +75,7 @@ class Page
     @contentDom = contentDiv = document.createElement 'div'
     contentDiv.setAttribute('class', 'content')
     contentDiv.appendChild @createBackdropDom()
-    # contentDiv.appendChild @createBackgroundImagesDom()
+    contentDiv.appendChild @createBackgroundImagesDom()
     contentDiv.appendChild @createForegroundImagesDom()
     contentDiv
 

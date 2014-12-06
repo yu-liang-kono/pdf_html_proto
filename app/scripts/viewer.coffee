@@ -34,7 +34,7 @@ class Viewer
       pageNumber: pageNumber
       backgroundImages: [
         {
-          src: "http://hqtp.thekono.com/~yuliang/newsweek/bg_#{ zeroFilledPageNumber }.png",
+          src: "/assets/bg_#{ zeroFilledPageNumber }.png",
           top: 0
           left: 0
           size: 1
@@ -42,7 +42,7 @@ class Viewer
       ]
       foregroundImages: [
         {
-          src: "http://hqtp.thekono.com/~yuliang/newsweek/txt_#{ zeroFilledPageNumber }.svg"
+          src: "/assets/txt_#{ zeroFilledPageNumber }.svg"
           top: 0
           left: 0
           size: 1
@@ -74,11 +74,11 @@ class Viewer
         if i - 1 > 0 and visibleLut[i - 1]
           break
 
-    #if firstVisiblePageIx - 1 > 0
-    #  visibleLut[firstVisiblePageIx - 1] = true
+    if firstVisiblePageIx - 1 > 0
+      visibleLut[firstVisiblePageIx - 1] = true
 
-    #if lastVisiblePageIx + 1 < @pages.length
-    #  visibleLut[lastVisiblePageIx + 1] = true
+    if lastVisiblePageIx + 1 < @pages.length
+      visibleLut[lastVisiblePageIx + 1] = true
 
     _.each visibleLut, (visible, ix) =>
       page = @pages[ix]
