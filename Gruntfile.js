@@ -81,7 +81,8 @@ module.exports = function (grunt) {
             return [
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
-              connect.static(config.app)
+              connect.static(config.app),
+              connect().use('/assets', connect.static('./assets'))
             ];
           }
         }
@@ -355,6 +356,9 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        }, {
+          src: 'assets/*',
+          dest: '<%= config.dist %>/'
         }]
       },
       styles: {
